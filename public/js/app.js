@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messageOne.textContent="Loading Weather ForeCast....."
     messageTwo.textContent=''
 
-    const api='http://localhost:3000/weather?address='+encodeURIComponent(location)
+    const api='/weather?address='+encodeURIComponent(location)
     fetch(api).then((response)=>
     {
     response.json().then((data)=>
